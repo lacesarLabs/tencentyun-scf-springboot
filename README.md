@@ -14,7 +14,7 @@
 
 # 快速上手
 
-###1.使用maven命令进行scf项目打包
+### 1.使用maven命令进行scf项目打包
 ```
 mvn clean package -Pscf
 ```
