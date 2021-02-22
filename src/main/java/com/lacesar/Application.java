@@ -1,4 +1,4 @@
-package priv.freeeeeedom;
+package com.lacesar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
