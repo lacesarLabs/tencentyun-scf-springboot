@@ -5,7 +5,7 @@
 - [x] **本地模拟云函数调用** - 可以在本地模拟API网关-云函数调用流程
 - [x] **轻量** - 将核心文件移植到自己的springboot下即可进行云函数部署
 
-#### 本demo基于 springboot-2.2.9.RELEASE 编写
+#### 本demo基于 springboot-2.2.13.RELEASE 编写
 #### 核心文件scf/ScfRoute2.java
 
 # 环境
@@ -24,7 +24,7 @@ mvn clean package -Pscf
 - 运行环境Java8
 - 本地上传zip包
 - 选择target/demo-1.0-scf.jar
-- 执行方法填入scf.ScfRouter2::routePath
+- 执行方法填入scf.ScfRouter::run
 - 完成
 
 ### 3.新建API网关

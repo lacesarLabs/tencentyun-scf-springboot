@@ -27,7 +27,7 @@ import java.util.Map;
  * @author Freeeeeedom
  * @date 2020/12/2 15:23
  */
-public class ScfRouter2 {
+public class ScfRouter {
     private static DispatcherServlet dispatcherServlet;
     private static ServletContext servletContext;
     private static int gcControl = 0;
@@ -56,11 +56,11 @@ public class ScfRouter2 {
         }.getType());
         long start;
         start = System.currentTimeMillis();
-        System.out.println(new ScfRouter2().routePath(param));
+        System.out.println(new ScfRouter().run(param));
         System.out.println("耗时:" + (System.currentTimeMillis() - start));
     }
 
-    public Object routePath(Map<String, Object> param) throws Exception {
+    public Object run(Map<String, Object> param) throws Exception {
         Gson gson = new GsonBuilder().disableHtmlEscaping().create();
         System.out.println("当前函数第" + ++totalCount + "次执行");
         System.out.println("入参:" + gson.toJson(param));
